@@ -1,0 +1,781 @@
+ERROR - 2023-12-02 06:53:16 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#11 {main}
+CRITICAL - 2023-12-02 06:53:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 06:53:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#11 {main}
+CRITICAL - 2023-12-02 06:53:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 06:58:57 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', Array, NULL, 'username')
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', Array, Array)
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', Array, NULL, 'username')
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', Array, Array)
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+CRITICAL - 2023-12-02 06:58:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', [...], null, 'username')
+ 5 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', [...], [...])
+ 6 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\User.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:02:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', Array, NULL, 'username')
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', Array, Array)
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', Array, NULL, 'username')
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', Array, Array)
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+CRITICAL - 2023-12-02 07:02:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', [...], null, 'username')
+ 5 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', [...], [...])
+ 6 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\User.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:03:39 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#11 {main}
+CRITICAL - 2023-12-02 07:03:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:03:55 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+CRITICAL - 2023-12-02 07:03:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', [...], null, 'username')
+ 5 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', [...], [...])
+ 6 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\User.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:04:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Models\UserModel.php(50): CodeIgniter\BaseModel->first()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(31): App\Models\UserModel->getUserByRoleAndId('user', '1')
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->detail('1')
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 D:\Web Dev PROJECT\assignment-12-ci\app\Models\UserModel.php(50): CodeIgniter\BaseModel->first()
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(31): App\Models\UserModel->getUserByRoleAndId('user', '1')
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->detail('1')
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#12 {main}
+CRITICAL - 2023-12-02 07:04:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `role` = :role:
+AND `id` = :id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\UserModel.php(50): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\User.php(31): App\Models\UserModel->getUserByRoleAndId('user', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->detail('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:04:22 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#11 {main}
+CRITICAL - 2023-12-02 07:04:22 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:06:29 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', Array, NULL, 'username')
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', Array, Array)
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', Array, NULL, 'username')
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', Array, Array)
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+CRITICAL - 2023-12-02 07:06:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('tigoyoga21', 'username', [...], null, 'username')
+ 5 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', 'tigoyoga21', [...], [...])
+ 6 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\User.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:06:33 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#11 {main}
+CRITICAL - 2023-12-02 07:06:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:06:52 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+CRITICAL - 2023-12-02 07:06:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', [...], null, 'username')
+ 5 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', [...], [...])
+ 6 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\User.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:07:16 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+CRITICAL - 2023-12-02 07:07:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', [...], null, 'username')
+ 5 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', [...], [...])
+ 6 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\User.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:07:31 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+CRITICAL - 2023-12-02 07:07:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', [...], null, 'username')
+ 5 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', [...], [...])
+ 6 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\User.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:07:35 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#11 {main}
+CRITICAL - 2023-12-02 07:07:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:07:52 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pbkk_12' in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', Array, NULL, 'username')
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', Array, Array)
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(49): CodeIgniter\Controller->validate(Array)
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->save()
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#13 {main}
+CRITICAL - 2023-12-02 07:07:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pbkk_12'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('5025211125', 'username', [...], null, 'username')
+ 5 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('username', 'username', '5025211125', [...], [...])
+ 6 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\User.php(49): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')
+ERROR - 2023-12-02 07:08:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pbkk_12', 3306, '', 0)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Web Dev PROJECT\assignment-12-ci\app\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+#6 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\User->index()
+#7 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web Dev PROJECT\assignment-12-ci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Web Dev PROJECT\assignment-12-ci\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJ...')
+#11 {main}
+CRITICAL - 2023-12-02 07:08:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Web Dev PROJECT\\assignment-12-ci\\public\\index.php')

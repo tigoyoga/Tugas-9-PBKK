@@ -20,7 +20,12 @@
 
 <body>
   <div class="container mt-5">
-    <form action="<?= site_url('/user/save') ?>" method="post" >
+    <h1 class="text-center">Tambah User</h1>
+    <form action="<?= base_url('/user/save') ?>" method="post" >
+    <div class="form-group">
+        <label>Nama</label>
+        <input type="text" name="nama" class="form-control" value="">
+      </div>
       <div class="form-group">
         <label>Username</label>
         <input type="text" name="username" class="form-control" value="">
@@ -29,10 +34,7 @@
         <label>Password</label>
         <input type="password" name="password" class="form-control" value="">
       </div>
-      <div class="form-group">
-        <label>Nama</label>
-        <input type="text" name="nama" class="form-control" value="">
-      </div>
+      
       <div class="form-group">
         <label>Email</label>
         <input type="email" name="email" class="form-control" value="">
@@ -46,7 +48,7 @@
         <input type="text" name="alamat" class="form-control" value="">
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-danger btn-block">Save Data</button>
+        <button type="submit" class="btn btn-primary btn-block">Save Data</button>
       </div>
     </form>
   </div>
